@@ -55,6 +55,17 @@ Lets you map values to CHOP Channels via a Table DAT. This is useful to clearly 
 *(Button)*
 Click to open the mapping table in a seperate window.
 
+**Example Mapping Table**
+
+| DMX Channel | Path To Value      | Fixture Name | Channel Description |
+|-------------|--------------------|--------------|---------------------|
+| 1           | op('../const1')[0] | Left RGB Par | Red                 |
+| 2           | op('../const1')[1] |              | Green               |
+| 3           | op('../const1')[2] |              | Blue                |
+| 4           |                    |              | Preset              |
+| 5           |                    |              | Shutter             |
+| 6           | op('../const1')[3] |              | Dimmer              |
+
 The first column of the mapping table takes the number of the corresponding DMX channel. Must be a list of consecutive integers. If you have empty channels inbetween mapped channels make sure to fill in the missing numbers. 
 
 The second column takes a python expression pointing to the value the channel will get.
