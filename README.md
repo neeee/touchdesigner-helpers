@@ -1,26 +1,32 @@
 # Touchdesigner Helpers
 An open collection of useful tools around Derivative Touchdesigner.
 
+
 ## Components
+### Table of contents
+* [Beat Pulse](#beat-pulse)
+* [Color Picker](#color-picker)
+* [DMX Map](#dmx-map)
+
 ### Beat Pulse
 Outputs a pulse (maximum value of 1) in sync with the global project tempo.
 
 #### Parameters
 **Pulse Length** 
-*Value between 0 and 1.*
+*(Value between 0 and 1)*
 Determines the fraction of "Note Length" duration that the output stays 1.
 E.g. If "Note Length" is 1/4 and "Pulse Length" is 0.5 the output stays 1 for 1/8th (of a beat).
 
 **Beat Speed**
-*Value between 0 and 1.*
+*(Value between 0 and 1)*
 Determines the frequency of the pulse.
 
 **Note Length**
-*read only*
+*(read only)*
 The frequency set in "Beat Speed" expressed in fractions or multiples of a beat.
 
 **Ease Out**
-*Value between 0 and ~ (in seconds)*
+*(Value between 0 and ~ in seconds)*
 Duration the output takes to ease back to 0 after a pulse.
 
 
@@ -35,7 +41,7 @@ An RGB Color
 The alpha value of the color
 
 **Channel Name Prefix**
-*String*
+*(String)*
 By default the output channels will be named "r", "g", "b", "a" for the color channels. You can specify a string to prefix the default channel names.
 
 
@@ -44,7 +50,7 @@ Lets you map values to CHOP Channels via a Table DAT. This is useful to clearly 
 
 #### Parameters
 **Open Mapping Table**
-*Button*
+*(Button)*
 Click to open the mapping table in a seperate window.
 
 The first column of the mapping table takes the number of the corresponding DMX channel. Must be a list of consecutive integers. If you have empty channels inbetween mapped channels make sure to fill in the missing numbers. 
